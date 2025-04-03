@@ -3,20 +3,28 @@
 
 *{
     margin: 0px;
-
 }
 
 
-header{
-background-color: aqua;
+@font-face {
+    font-family:'time';
+    src: url('Arquivos_Pg/Fontes/ds_digital/DS-DIGI.TTF') format('truetype');
 }
 
+/*///////////////////////////////////////////////////////////////////////*/
+           
 
-h1{
-    text-align: center;
-    padding: 10px 0px 10px 0px;
-    
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
