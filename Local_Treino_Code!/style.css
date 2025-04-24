@@ -12,6 +12,7 @@ body{
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
+    
 
 }
 
@@ -26,15 +27,23 @@ main{
     position: relative;
 }
 
+iframe#tela{
+    position: relative;
+    top: 65px;
+    left: 18px;
+    width: 218px;
+    height: 383px;
+}
+
 #telefone{
     border-radius: 20px;
-    height: 472px;
+    height: 511px;
     width: 252px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: url('Arquivos_Pg/Imagens/aphone.ok.png');
+    background: url('Arquivos_Pg/Imagens/imgprojeto/frame-iphone.png');
    background-size: cover;
 }
 
@@ -45,6 +54,63 @@ main{
     width: 240px;
     height: 387px;
 }
+
+
+section#redes-sociais img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.489);
+    box-sizing: border-box;
+}
+
+section#redes-sociais{
+    text-align: right;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+section#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.584);
+    transform: translate( -3px, -3px );
+    box-shadow: 5px 5px 10px black;
+    transition:  .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
