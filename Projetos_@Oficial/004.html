@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>001</title>
+    <link rel="stylesheet" href="004.css">
+
+
+</head>
+<body  class="body1"
+>
+
+<h1>CODING</h1>
+    <div class="div1"
+    ></div>
+
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+
+    <div class="div5" onclick="entra()" onmouseout="sair()"
+    >Clique Aqui!</div>
+
+<script>
+    var body = document.getElementsByClassName('body1')[0]
+
+    function entra(){
+        var bt = document.getElementsByClassName('div1')[0]
+        bt.style.background='rgb(255, 255, 255)'
+        body.style.background='rgb(255, 255, 255)'
+    }
+
+    function sair(){
+        var bt =  document.getElementsByClassName('div1')[0]
+        bt.style.background='rgba(0, 0, 0, 0.68)'
+        body.style.background='rgb(79, 78, 78)'
+
+    }
+
+
+    
+</script>
+    
+<!--
+
+white   rgb(255, 255, 255)
+
+ -click, evento do clique inteiro aperta e solta o mouse!
+
+//////////////
+    -mouseenter, mouse entro na div!!
+    -mousemove, movendo o mouse por dentor da div! vai ser desparado       varias vezes o (mousemove)!
+    -mouseout, quando move o mouse para fora da div!
+    -mousedown, clica com o mouse e segura vai ter o (mousedown)!
+    -mouseup, quando solta o clique do mouse dispar o evento (mouseup)!
+    -click, evento do clique inteiro aperta e solta o mouse!
+    
+
+-->
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+

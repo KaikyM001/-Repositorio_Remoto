@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+}
+
+
+
+
+
+@font-face {
+    font-family:'ti';
+    src: url('Fontes/round_six/Game\ Of\ Squids.otf') format('truetype');
+}
+
+
+body{
+    background-color: rgb(0, 0, 105);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+header{
+
+}
+
+h1{
+    background-color: blue;
+    font-family:'ti';
+    text-align: center;
+    width: 100vw;
+}
+
+main{
+    background-color: blue;
+    height: 80vh;
+    width: 80vw;
+    margin-top: 20px;
+    border: 1.5px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+
+.d1{
+    background-color: deepskyblue;
+    width: 100%;
+    border: 1.5px solid black;
+    margin: 3px;
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: lighter;
+    padding: 3px;
+    text-align: justify;
+    
+}
+
+
+article{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: justify;
+   
+}
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    background-image:linear-gradient(to top, blue, deepskyblue, deepskyblue, blue)
+    
+}
+
+.p1{
+    padding: 5px;
+    background-image:linear-gradient(to top, blue, rgb(255, 255, 255), blue)
+     
+}
+
+
+
+
+.main2{
+    height: 50px;
+    width: 50px;
+    background-color:red;
+}
+
+
+span{
+    font-weight: bold;
+    font-size: 19px;
+    
+
+}
+
+
+
+
+
+
+
+
