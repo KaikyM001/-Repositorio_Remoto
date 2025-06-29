@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web/Hora_do_Dia</title>
+    <link rel="stylesheet" href="005.css">
+<!--// RELÓGIO QUE MUDA A IMAGEM E COR DE FUNDO COM FORME AS HORAS OU PERIODO DO DIA //-->
+
+</head>
+<body onload ='timehr()'>
+
+    <header>
+        <h1>Hora do Dia</h1>
+    </header>
+
+
+    <section>
+        <div class="div1"> *****</div>
+
+        <div class=""> <img class="foto1" src="Arquivos_Pg/Imagens/nasce_do_sol.jpg" alt="foto da noite" >
+        </div>
+    </section>
+
+
+    <footer>
+        <h3>@Klark.Gregorio</h3>
+    </footer>
+
+    <script src="005.time/ext"></script>
+    <script>
+        function timehr(){
+            var div1 = document.getElementsByClassName('div1')[0]
+            var foto1 = document.getElementsByClassName('foto1')[0]
+            var data = new Date()
+            var hora = data.getHours()
+            div1.innerHTML =`Agora são ${hora} horas.`
+            if(hora>= 0 && hora <= 12){
+                //BOM DIA
+                document.body.style.background ='#e2cd9f'
+                foto1.src = "Arquivos_Pg/Imagens/nasce_do_sol.jpg"
+            }else if(hora>= 12 && hora<=18){
+                //BOA TARDE
+                document.body.style.background ='#b9846f'
+                foto1.src = "Arquivos_Pg/Imagens/sol-da_tarde.jpg"
+            }else{
+                //BOA NOITE
+                document.body.style.background ='#515154'
+                foto1.src = "Arquivos_Pg/Imagens/tardenoite.jpg"
+            }
+        }
+    </script>
+
+<!--
+
+-->    
+
+</body>
+</html>

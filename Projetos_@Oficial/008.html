@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web_siteprát</title>
+    <link rel="stylesheet" href="008.css">
+
+</head>    <!-- ()    ()-->
+<body>
+
+    <h1>   Sistema <br> de <br> [ IMPAR ou PAR ]</h1>
+
+    <main>
+        <h3>Descubra ser é IMPAR ou PAR!</h3>
+        <p class="p0">Digite seu Numero Abaixo!</p>
+        <P class="p1"><input type="number" name="num1" id="valor1"></P>
+        <P class="p2"><input type="submit" value="Enviar" 
+        onclick="cliq1()"></P>
+            
+        <p class="p3"></p> 
+        <p class="p4"></p> 
+        <p class="ps"></p> 
+        <p class="p5"></p> 
+
+    </main>
+
+    <script> 
+        function cliq1(){
+        var valor1 = Number(document.getElementById('valor1').value) 
+        var rest = document.getElementsByClassName('p3')[0]
+        var rest4 = document.getElementsByClassName('p4')[0]
+        var rest5 = document.getElementsByClassName('p5')[0]
+        var restps = document.getElementsByClassName('ps')[0]
+
+        //RESETAR O CODIGO PARA NÃO COLOCAR VARIOS VALORES JUNTOS
+        rest.innerHTML = '';
+        rest4.innerHTML = '';
+        rest5.innerHTML = '';
+        restps.innerHTML = '';
+        
+
+        var resposta = valor1 % 2
+            if(resposta === 0){
+                rest.innerHTML +=`Numero escolhido ( ${valor1} )` 
+                rest4.innerHTML +=`O Numero ( ${valor1} ) é PAR!`
+                restps.innerHTML +=`Lista de N° Par:`
+                /////////////////
+                resposta = 0
+                    while( valor1 <= 100){
+                        rest5.innerHTML+=`${valor1}, `
+                        valor1 += 2 
+                    }
+            }else{
+                rest.innerHTML+= `Numero Escolhido ( ${valor1} )`
+                rest4.innerHTML+= `O Numero ( ${valor1} ) é ÍMPAR!`
+                restps.innerHTML+= `Lista de N° ÍMPAS:`
+                ////////////////
+                resposta = 0
+                    while( valor1 <= 100){
+                        rest5.innerHTML+=`${valor1}, `
+                        valor1 += 2 
+                    }
+            }
+        }
+    </script>
+
+<!--
+
+
+-->
+</body>
+</html>

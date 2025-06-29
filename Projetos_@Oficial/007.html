@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web_siteprát</title>
+    <link rel="stylesheet" href="007.css">
+<!--// MUDA A COR DO FUNDO, TEMA CLARO OU ESCURO //-->
+
+</head>    <!-- ()    ()-->
+<body>
+
+    <header>
+        <h2>Testando Butão</h2>
+    </header>
+
+    <div>
+        <p> <input type="radio" name="tema" id="bot1" checked>
+        <label for="cla">Claro</label>
+        <input type="radio" name="tema" id="bot2"> 
+        <label for="esc">Escuro</label> </p>
+        <p><input type="submit" value="Definir Tema" onclick="cliq()" id="bt3"></p>
+    </div>
+
+    <script>
+        function cliq(){
+            var tema1 = document.getElementById('bot1')
+            var tema2 = document.getElementById('bot2')
+            var bta1 = document.getElementById('bt3')
+            var head1 = document.getElementsByTagName('header')[0]
+            if(tema1.checked){
+                document.body.style.background = 'white'
+                bta1.style.background = 'gray'
+                head1.style.background = 'gray'
+            }else if( tema2.checked){
+                document.body.style.background = 'gray'
+                bta1.style.background = 'white'
+                head1.style.background = 'white'
+            }
+        }
+    </script>
+
+
+
+<!--
+
+
+-->
+</body>
+</html>

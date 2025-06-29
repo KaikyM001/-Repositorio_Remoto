@@ -4,20 +4,21 @@
     margin: 0px;
 }
 
+    @font-face {
+        font-family:'font1';
+        src: url('Fontes/ds_digital/DS-DIGI.TTF') format('truetype');
+    }
+
 body{
-    margin: 5px;
-    margin-left: 20px;
-}
+    padding: 8px;
+} 
 
-.th2{
+h1{
+    margin-bottom: 30px;
     text-align: center;
-    margin-bottom: 10px;
 }
 
-div{
-    display: flex;
-    margin-top: 4px;
-}
+
 
 
 

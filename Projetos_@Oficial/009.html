@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="009.css">
+    <title>Web_siteprát</title>
+    <!-- () -->
+
+</head>
+<body>
+    <h1>Ineteração Textural! ;)</h1>
+
+    <main>
+        <p class = 'p1'>Teste de testo Interativo</p>
+        <p class = 'p2'>Por favor, digite seu nome para personalizar o texto!</p>
+
+        <p  class = 'p3'>Nome: <input type="text" name="nome11" id="nome11"> </p>
+
+        <P  class = 'p4'><input type="submit" value="Enviar!" onclick="cliq11()" class="enviar"
+            ></P>
+        <p class="textt"></p>
+         
+    </main>
+    <!--/////////-->
+
+    <script>
+        function cliq11(){
+            var nome = document.getElementById('nome11').value
+            var textt = document.getElementsByClassName('textt')[0]
+            textt.style.background = 'white'
+            textt.style.padding = '5px'
+            textt.style.border = '1.5px solid black'
+            textt.style.borderRadius = '10px'
+
+            textt.innerHTML = `
+            Era uma manhã calma quando <strong>${nome}</strong> abriu a
+            janela e sentiu o vento tocar o rosto, como se o dia estivesse esperando só por ela. Havia algo no ar... uma sensação de que <strong>${nome}</strong> estava prestes a viver algo diferente, algo que não se explica com palavras. 
+            <br><br>
+
+            Enquanto caminhava pela rua, observando o movimento da cidade, os pensamentos de <strong>${nome}</strong> se misturavam com sons, cheiros e lembranças. Cada passo parecia empurrar o mundo um pouquinho adiante — como se, naquele instante, o universo estivesse ouvindo só uma voz: a dela. 
+            <br><br>
+
+            No final do dia, enquanto o sol caía no horizonte, <strong>${nome}</strong> sabia que aquela jornada, mesmo silenciosa, havia mudado algo dentro dela. Porque, às vezes, tudo que a gente precisa é de um momento, um sopro, um olhar... e o resto, o coração da gente entende.` 
+
+        }
+        
+
+    </script>
+
+<!--
+
+    1°- atividade que coloca o nome da pessoa no texto! escrito no site
+    //////////////////////
+        ATIVIDADE: Faze o usuario multiplicar uma valor por outro!
+    -mouseenter, mouse entro na div!!
+    -mousemove, movendo o mouse por dentor da div! vai ser desparado       varias vezes o (mousemove)!
+    -mouseout, quando move o mouse para fora da div!
+    -mousedown, clica com o mouse e segura vai ter o (mousedown)!
+    -mouseup, quando solta o clique do mouse dispar o evento (mouseup)!
+    -click, evento do clique inteiro aperta e solta o mouse!
+
+-->
+</body>
+</html
